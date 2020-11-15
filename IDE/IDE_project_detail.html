@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WEB IDE 1.0.1 | 项目列表</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+    <nav class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+            <ul class="nav metismenu" id="side-menu">
+                <li class="nav-header">
+                    <div class="dropdown profile-element">
+                        <img alt="image" class="rounded-circle" src="img/profile_small.jpg"/>
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <span class="block m-t-xs font-bold">王宇</span>
+                            <span class="text-muted text-xs block">VIP <b class="caret"></b></span>
+                        </a>
+                        <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                            <li><a class="dropdown-item" href="profile.html">个人信息</a></li>
+                            <li><a class="dropdown-item" href="contacts.html">好友</a></li>
+                            <li><a class="dropdown-item" href="mailbox.html">信箱</a></li>
+                            <li class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="login.html">登出</a></li>
+                        </ul>
+                    </div>
+                    <div class="logo-element">
+                        WI+
+                    </div>
+                </li>
+                <li>
+                    <a href="index.html"><i class="fa fa-th-large"></i> <span class="nav-label">Dashboards</span> <span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse">
+                        <li><a href="IDE_main.html">我的主页</a></li>
+                 
+                    </ul>
+                </li>
+                
+                <li>
+                    <a href="#"><i class="fa fa-desktop"></i> <span class="nav-label">我的项目</span>  <span class="float-right label label-primary">特别</span></a>
+                    <ul class="nav nav-second-level collapse">
+                        <li><a href="IDE_projects.html">项目</a></li>
+                        <li><a href="project_detail.html">项目详情</a></li>
+                        <li><a href="activity_stream.html">活动</a></li>
+                        <li><a href="teams_board.html">团队</a></li>
+                    </ul>
+                </li>
+                
+                <li>
+                    <a href="#"><i class="fa fa-sitemap"></i> <span class="nav-label">菜单 </span><span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse">
+                        <li>
+                            <a href="#">三级菜单 <span class="fa arrow"></span></a>
+                            <ul class="nav nav-third-level">
+                                <li>
+                                    <a href="#">三级菜单</a>
+                                </li>
+                                <li>
+                                    <a href="#">三级菜单</a>
+                                </li>
+                                <li>
+                                    <a href="#">三级菜单</a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li><a href="#">二级菜单</a></li>
+                        <li>
+                            <a href="#">二级菜单</a></li>
+                        <li>
+                            <a href="#">二级菜单</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="page-wrapper" class="gray-bg">
+        <div class="row border-bottom">
+            <nav class="navbar navbar-static-top  " role="navigation" style="margin-bottom: 0">
+                <div class="navbar-header">
+                    <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+                    <form role="search" class="navbar-form-custom" action="search_results.html">
+                        <div class="form-group">
+                            <input type="text" placeholder="请输入搜索内容" class="form-control" name="top-search" id="top-search">
+                        </div>
+                    </form>
+                </div>
+                <ul class="nav navbar-top-links navbar-right">
+                    <li>
+                        <span class="m-r-sm text-muted welcome-message">欢迎来到WEB IDE 1.0.1</span>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                            <i class="fa fa-envelope"></i>  <span class="label label-warning">16</span>
+                        </a>
+                        
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                            <i class="fa fa-bell"></i>  <span class="label label-primary">8</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-alerts">
+                            <li>
+                                <a href="mailbox.html" class="dropdown-item">
+                                    <div>
+                                        <i class="fa fa-envelope fa-fw"></i> 你有16条消息
+                                        <span class="float-right text-muted small">4 分钟前</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="dropdown-divider"></li>
+                            <li>
+                                <a href="profile.html" class="dropdown-item">
+                                    <div>
+                                        <i class="fa fa-twitter fa-fw"></i> 3 个新的关注者
+                                        <span class="float-right text-muted small">12 分钟前</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="dropdown-divider"></li>
+                            
+                            <li class="dropdown-divider"></li>
+                            <li>
+                                <div class="text-center link-block">
+                                    <a href="notifications.html" class="dropdown-item">
+                                        <strong>查看所有信息</strong>
+                                        <i class="fa fa-angle-right"></i>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li>
+                        <a href="login.html">
+                            <i class="fa fa-sign-out"></i> 注销
+                        </a>
+                    </li>
+                </ul>
+
+            </nav>
+        </div>
+        <div class="row wrapper border-bottom white-bg page-heading">
+            <div class="col-sm-4">
+                <h2>项目详情</h2>
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                        <a href="index.html">项目</a>
+                    </li>
+                    <li class="breadcrumb-item active">
+                        <strong>项目详情</strong>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div class="wrapper wrapper-content animated fadeInUp">
+            <div class="row">
+                <div class="col-lg-9">
+
+                    <div class="ibox">
+                        <div class="ibox-content">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="m-b-md">
+                                        <a href="#" class="btn btn-white btn-xs float-right">编辑项目</a>
+                                        <h2>与企鹅公司签订合同</h2>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <dl class="row mb-0">
+                                        <div class="col-sm-4 text-sm-right"><dt>Status:</dt> </div>
+                                        <div class="col-sm-8 text-sm-left"><dd class="mb-1"><span class="label label-primary">Active</span></dd></div>
+                                    </dl>
+                                    <dl class="row mb-0">
+                                        <div class="col-sm-4 text-sm-right"><dt>Created by:</dt> </div>
+                                        <div class="col-sm-8 text-sm-left"><dd class="mb-1">Alex Smith</dd> </div>
+                                    </dl>
+                                    <dl class="row mb-0">
+                                        <div class="col-sm-4 text-sm-right"><dt>Messages:</dt> </div>
+                                        <div class="col-sm-8 text-sm-left"> <dd class="mb-1">  162</dd></div>
+                                    </dl>
+                                    <dl class="row mb-0">
+                                        <div class="col-sm-4 text-sm-right"><dt>Client:</dt> </div>
+                                        <div class="col-sm-8 text-sm-left"> <dd class="mb-1"><a href="#" class="text-navy"> Zender Company</a> </dd></div>
+                                    </dl>
+                                    <dl class="row mb-0">
+                                        <div class="col-sm-4 text-sm-right"> <dt>Version:</dt></div>
+                                        <div class="col-sm-8 text-sm-left"> <dd class="mb-1"> 	v1.4.2 </dd></div>
+                                    </dl>
+
+                                </div>
+                                <div class="col-lg-6" id="cluster_info">
+
+                                    <dl class="row mb-0">
+                                        <div class="col-sm-4 text-sm-right">
+                                            <dt>Last Updated:</dt>
+                                        </div>
+                                        <div class="col-sm-8 text-sm-left">
+                                            <dd class="mb-1">16.08.2014 12:15:57</dd>
+                                        </div>
+                                    </dl>
+                                    <dl class="row mb-0">
+                                        <div class="col-sm-4 text-sm-right">
+                                            <dt>Created:</dt>
+                                        </div>
+                                        <div class="col-sm-8 text-sm-left">
+                                            <dd class="mb-1"> 10.07.2014 23:36:57</dd>
+                                        </div>
+                                    </dl>
+                                    <dl class="row mb-0">
+                                        <div class="col-sm-4 text-sm-right">
+                                            <dt>Participants:</dt>
+                                        </div>
+                                        <div class="col-sm-8 text-sm-left">
+                                            <dd class="project-people mb-1">
+                                                <a href=""><img alt="image" class="rounded-circle" src="img/a3.jpg"></a>
+                                                <a href=""><img alt="image" class="rounded-circle" src="img/a1.jpg"></a>
+                                                <a href=""><img alt="image" class="rounded-circle" src="img/a2.jpg"></a>
+                                                <a href=""><img alt="image" class="rounded-circle" src="img/a4.jpg"></a>
+                                                <a href=""><img alt="image" class="rounded-circle" src="img/a5.jpg"></a>
+                                            </dd>
+                                        </div>
+                                    </dl>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <dl class="row mb-0">
+                                        <div class="col-sm-2 text-sm-right">
+                                            <dt>完成度:</dt>
+                                        </div>
+                                        <div class="col-sm-10 text-sm-left">
+                                            <dd>
+                                                <div class="progress m-b-1">
+                                                    <div style="width: 60%;" class="progress-bar progress-bar-striped progress-bar-animated"></div>
+                                                </div>
+                                                <small>项目完成 <strong>60%</strong> 
+                                            </dd>
+                                            <div class="col-lg-3">
+									                <div class="wrapper wrapper-content project-manager">
+									                    <h4>项目介绍</h4>
+									                    
+									                    <p class="small">
+									                        项目介绍还没有填写
+									                    </p>
+									                    <p class="small font-bold">
+									                        <span><i class="fa fa-circle text-warning"></i> 敏捷开发</span>
+									                    </p>
+									                    <div>
+									                    <h5>项目标签</h5>
+									                    <ul class="tag-list" style="padding: 0">
+									                        <li><a href=""><i class="fa fa-tag"></i> 标签</a></li>
+									                        <li><a href=""><i class="fa fa-tag"></i> 标签</a></li>
+									                        <li><a href=""><i class="fa fa-tag"></i> 标签</a></li>
+									                        <li><a href=""><i class="fa fa-tag"></i> 标签</a></li>
+									                    </ul>
+									                    </div>
+									                    </div>
+									              
+                                        </div>
+                                    </dl>
+                                </div>
+                                
+                            </div>
+                            <div class="row m-t-sm">
+                                <div class="col-lg-12">
+                                    <div class="panel blank-panel">
+                                        <div class="panel-heading">
+                                            <div class="panel-options">
+                                                <ul class="nav nav-tabs">
+                                                  
+                                                    <li><a class="nav-link" href="#tab-2" data-toggle="tab">最后活动</a></li>
+                                                     <li><a class="nav-link doc" href="#tab-3" data-toggle="tab">项目文件</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="panel-body">
+                                            <div class="tab-content">
+                                           	
+                              
+                                                <div class="tab-pane" id="tab-2">
+
+                                                    <table class="table table-striped">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>状态</th>
+                                                                <th>标题</th>
+                                                                <th>开始时间</th>
+                                                                <th>结束时间</th>
+                                                                <th>备注</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>
+                                                                    <span class="label label-primary"><i class="fa fa-check"></i> 已完成</span>
+                                                                </td>
+                                                                <td>
+                                                                    时间从何而来？为什么时间似乎是流动的？
+                                                                </td>
+                                                                <td>
+                                                                    2017.12.12 10:10:1
+                                                                </td>
+                                                                <td>
+                                                                    2017.12.12 10:16:36
+                                                                </td>
+                                                                <td>
+                                                                    <p class="small">
+                                                                        在我们看来，宇宙万物皆是永恒变化的，所以我们产生了时间的概念。
+                                                                    </p>
+                                                                </td>
+
+                                                        </tbody>
+                                                    </table>
+
+                                                </div>
+                                                <div class=""id="tab-3">
+	                                            	 <h5>项目文件</h5>
+								                    <ul class="list-unstyled project-files">
+								                        <li><a href=""><i class="fa fa-file"></i> Project_document.docx</a></li>
+								                        <li><a href=""><i class="fa fa-file-picture-o"></i> Logo_zender_company.jpg</a></li>
+								                        <li><a href=""><i class="fa fa-stack-exchange"></i> Email_from_Alex.mln</a></li>
+								                        <li><a href=""><i class="fa fa-file"></i> Contract_20_11_2014.docx</a></li>
+								                    </ul>
+								                    <div class="text-center m-t-md">
+								                        <a href="#" class="btn btn-xs btn-primary">添加文件</a>
+								                     
+											</div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        <div class="footer">
+            <div class="float-right">
+                <strong>1.0.1 WEB IDE</strong>
+            </div>
+            <div>
+                <strong>Copyright</strong> WEB IDE 1.0.1 &copy; 2000-2020
+            </div>
+        </div>
+
+    </div>
+        </div>
+
+    <!-- Mainly scripts -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="js/inspinia.js"></script>
+    <script src="js/plugins/pace/pace.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+
+            $('#loading-example-btn').click(function () {
+                btn = $(this);
+                simpleLoad(btn, true)
+
+                // Ajax example
+//                $.ajax().always(function () {
+//                    simpleLoad($(this), false)
+//                });
+
+                simpleLoad(btn, false)
+            });
+        });
+
+        function simpleLoad(btn, state) {
+            if (state) {
+                btn.children().addClass('fa-spin');
+                btn.contents().last().replaceWith(" Loading");
+            } else {
+                setTimeout(function () {
+                    btn.children().removeClass('fa-spin');
+                    btn.contents().last().replaceWith(" Refresh");
+                }, 2000);
+            }
+        }
+    </script>
+</body>
+
+</html>
