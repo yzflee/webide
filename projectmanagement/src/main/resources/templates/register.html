@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>注册</title>
+
+    <link th:href="@{css/bootstrap.min.css}" rel="stylesheet">
+    <link th:href="@{font-awesome/css/font-awesome.css}" rel="stylesheet">
+    <link th:href="@{css/plugins/iCheck/custom.css}" rel="stylesheet">
+    <link th:href="@{css/animate.css}" rel="stylesheet">
+    <link th:href="@{css/style.css}" rel="stylesheet">
+
+</head>
+
+<body class="gray-bg">
+
+    <div class="middle-box text-center loginscreen   animated fadeInDown">
+        <div>
+            <div>
+
+                <h1 class="logo-name">WI+</h1>
+
+            </div>
+            <h3>注册平台账户</h3>
+            <p>创建账户以查看更多功能</p>
+            <form id="register" class="m-t" role="form" th:action="@{/register}">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="用户名" required="" name="username">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="昵称" required="" name="nikiname">
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" placeholder="电子邮件" required="" name="email">
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" placeholder="密码" required="" name="pwd">
+                </div>
+                <div class="form-group">
+                        <div class="checkbox i-checks"><label> <input type="checkbox"><i></i> 同意条款和政策 </label></div>
+                </div>
+                <button id="zc" type="button" class="btn btn-primary block full-width m-b">注册</button>
+
+                <p class="text-muted text-center"><small>已经有一个帐户?</small></p>
+                <a class="btn btn-sm btn-white btn-block" href="/">登录</a>
+            </form>
+            <p class="m-t"> <small>Copyright</strong> WEB IDE &copy; 2000-2020</small> </p>
+        </div>
+    </div>
+
+    <!-- Mainly scripts -->
+    <script th:src="@{js/jquery-3.1.1.min.js}"></script>
+    <script th:src="@{js/popper.min.js}"></script>
+    <script th:src="@{js/bootstrap.js}"></script>
+    <!-- iCheck -->
+    <script th:src="@{js/plugins/iCheck/icheck.min.js}"></script>
+    <script>
+        $(document).ready(function(){
+            $('.i-checks').iCheck({
+                checkboxClass: 'icheckbox_square-green',
+                radioClass: 'iradio_square-green',
+            });
+
+            $("#zc").click(function () {
+                $.ajax({
+                    //几个参数需要注意一下
+                    type: "POST",//方法类型
+                    dataType: "json",//预期服务器返回的数据类型
+                    url: "/register" ,//url
+                    data: $('#register').serialize(),
+                    success: function (result) {
+                        console.log(result);//打印服务端返回的数据(调试用)
+                        if (result.code == "200") {
+                            alert("注册成功");
+                            window.location="/";
+                        } else {
+                            alert(result.msg);
+                        }
+                    },
+                    error : function() {
+                        alert("异常！");
+                    }
+                });
+            });
+
+
+
+        });
+
+
+
+
+    </script>
+</body>
+
+</html>

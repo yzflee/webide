@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link href="skyeye-editor/css/skyeye-annotate.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		<div id="container">
+			<textarea rows="" cols="">
+			    var SpeechApp = angular.module('SpeechApp', []);
+			
+			    function VoiceCtrl($scope)
+			
+			        $scope.said='...';
+			
+			        $scope.helloWorld = function()
+			            $scope.said = "Hello world!";
+			        }
+			
+			        $scope.commands =
+			            'hello (world)': function()
+			                if (typeof console !== "undefined") console.log('hello world!')
+			                $scope.$apply($scope.helloWorld);
+			            },
+			            'hey': function()
+			                if (typeof console !== "undefined") console.log('hey!')
+			                $scope.$apply($scope.helloWorld);
+			            }
+			        };
+			
+			        annyang.debug();
+			        annyang.init($scope.commands);
+			        annyang.start();
+			    }
+		var SpeechApp = angular.module('SpeechApp', []);
+			
+			    function VoiceCtrl($scope)
+			
+			        $scope.said='...';
+			
+			        $scope.helloWorld = function()
+			            $scope.said = "Hello world!";
+			        }
+			
+			        $scope.commands =
+			            'hello (world)': function()
+			                if (typeof console !== "undefined") console.log('hello world!')
+			                $scope.$apply($scope.helloWorld);
+			            },
+			            'hey': function()
+			                if (typeof console !== "undefined") console.log('hey!')
+			                $scope.$apply($scope.helloWorld);
+			            }
+			        };
+			
+			        annyang.debug();
+			        annyang.init($scope.commands);
+			        annyang.start();
+			    }var SpeechApp = angular.module('SpeechApp', []);
+			
+			    function VoiceCtrl($scope)
+			
+			        $scope.said='...';
+			
+			        $scope.helloWorld = function()
+			            $scope.said = "Hello world!";
+			        }
+			
+			        $scope.commands =
+			            'hello (world)': function()
+			                if (typeof console !== "undefined") console.log('hello world!')
+			                $scope.$apply($scope.helloWorld);
+			            },
+			            'hey': function()
+			                if (typeof console !== "undefined") console.log('hey!')
+			                $scope.$apply($scope.helloWorld);
+			            }
+			        };
+			
+			        annyang.debug();
+			        annyang.init($scope.commands);
+			        annyang.start();
+			    }var SpeechApp = angular.module('SpeechApp', []);
+			
+			    function VoiceCtrl($scope)
+			
+			        $scope.said='...';
+			
+			        $scope.helloWorld = function()
+			            $scope.said = "Hello world!";
+			        }
+			
+			        $scope.commands =
+			            'hello (world)': function()
+			                if (typeof console !== "undefined") console.log('hello world!')
+			                $scope.$apply($scope.helloWorld);
+			            },
+			            'hey': function()
+			                if (typeof console !== "undefined") console.log('hey!')
+			                $scope.$apply($scope.helloWorld);
+			            }
+			        };
+			
+			        annyang.debug();
+			        annyang.init($scope.commands);
+			        annyang.start();
+			    }</textarea>
+		</div>
+		<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+		<script type="text/javascript" src="skyeye-editor/js/rangy-core.js"></script>
+		<script type="text/javascript" src="skyeye-editor/js/rangy-cssclassapplier.js"></script>
+		<script type="text/javascript" src="skyeye-editor/js/skyeye-annotate.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				var annotate = $("#container").skyeyeAnnotate({
+					data: [
+					    
+					]
+				});
+			});
+		</script>
+		 <script>
+         $(document).ready(function(){
+
+        });
+    </script>
+	</body>
+</html>

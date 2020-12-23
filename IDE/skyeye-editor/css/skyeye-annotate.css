@@ -1,0 +1,110 @@
+
+.skyeyetipsIcon{
+	width: 25px;
+    border-radius: 5px;
+    background: white;
+}
+
+.filter{
+    opacity: 0.80;
+	filter: alpha(opacity = 80);
+}
+
+.annotate-box{
+	float: left;
+	overflow-y: auto;
+    padding: 15px 0px;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.annotate-box .hover{
+	border: 1px solid dodgerblue;
+}
+
+.new-skyeye-anno-box{
+	width: 100%;
+    float: left;
+    background-color: white;
+    position: absolute;
+}
+
+.new-skyeye-anno-box .anno-title{
+	width: 100%;
+    float: left;
+    height: 40px;
+    background-color: #F5F5F5;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    display: inline-flex;
+}
+
+.new-skyeye-anno-box .anno-title .anno-user-img{
+    width: 30px;
+    margin: 5px;
+    border-radius: 15px;
+    float: left;
+}
+
+.new-skyeye-anno-box .anno-title .anno-user-name{
+	line-height: 40px;
+    height: 40px;
+    float: left;
+    width: 28%;
+    white-space: nowrap; 
+	overflow: hidden; 
+	text-overflow: ellipsis;
+}
+
+.new-skyeye-anno-box .anno-title .anno-time{
+	line-height: 40px;
+    height: 40px;
+    float: right;
+    margin: 0px 5px;
+    color: darkgray;
+    font-size: 12px;
+    min-width: 120px;
+    width: 50%;
+}
+
+.new-skyeye-anno-box .anno-content{
+	float: left;
+    width: calc(100% - 2px);
+    min-height: 120px;
+    border: 1px solid gainsboro;
+}
+
+.new-skyeye-anno-box .anno-content .show-content{
+	word-break:break-all;
+	max-height: 120px;
+	height: 120px;
+    overflow: hidden;
+    display: -webkit-box;
+    line-height: 23px;
+    font-size: 12px;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+    padding: 5px;
+}
+
+.new-skyeye-anno-box .anno-content .show-editor{
+	display: block;
+    width: calc(100% - 10px);
+    border: 0px;
+    padding: 5px;
+    font-size: 12px;
+    min-height: 120px;
+    line-height: 23px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    border-color: rgba(82, 168, 236, 0.8);
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);
+}
+
+.selectClass{
+	background-color: lightcyan;
+}
+
+.selectHoverClass{
+	background-color: cyan;
+}	
