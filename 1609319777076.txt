@@ -1,0 +1,3 @@
+ <div>
+                    <textarea id="codeArea"  class="codeArea">似懂非懂发121233 </textarea>
+                </div>
