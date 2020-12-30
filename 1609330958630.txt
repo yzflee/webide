@@ -1,0 +1,26 @@
+<div class="ibox" style="width: 669px; ">
+                <div class="ibox-title" style="height: 50px; ">
+                    <h5>代码查看</h5>
+                    <a href="#" onclick="getContent()" class="float-right btn btn-xs btn-primary"> 保存修改 </a>
+                    <a href="#" class="float-right btn btn-xs btn-primary"> 另存为1234567903/新建 </a>
+                    <a href="#" class="float-right btn btn-xs btn-primary"> 删除文件 </a>
+
+                    <div class="ibox-tools">
+                        <a class="collapse-link">
+                            <i class="fa fa-chevron-up"></i>
+                        </a>
+                        <a class="close-link">
+                            <i class="fa fa-times"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="ibox-content">
+                    <div id="ace_editor">
+                    <pre id="content" style="width: 100%;height:100%"><textarea class="ace_text-input">//代码内容 </textarea></pre>
+                    </div>
+                </div>
+
+                <div>
+                    <textarea id="codeArea"  class="codeArea">似懂非懂发 </textarea>
+                </div>
+            </div>
